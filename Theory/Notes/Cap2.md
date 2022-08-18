@@ -18,3 +18,6 @@ ex.: Saber data de nascimento, portanto, sabe-se a idade
 - One-to-One
 - One-to-Many
 - Many-to-Many
+
+### Ex1
+https://lucid.app/lucidchart/19fc9ec1-49bb-482a-a80c-3e61d32f460b/edit?invitationId=inv_27a8fdc1-167f-44bf-8e9c-fae4f2364898&page=0_0#
