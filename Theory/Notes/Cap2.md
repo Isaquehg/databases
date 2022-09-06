@@ -40,3 +40,6 @@ https://lucid.app/lucidchart/19fc9ec1-49bb-482a-a80c-3e61d32f460b/edit?invitatio
 
 ## Exercício 2
 https://lucid.app/lucidchart/62f0f6b6-a997-4c33-8526-f67fd24b9a4d/edit?viewport_loc=63%2C124%2C1480%2C531%2C0_0&invitationId=inv_a740fc4d-af64-4172-a959-0497f0c49332#
+
+## Exercício 3
+MySQL Workbench Diagram
