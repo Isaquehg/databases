@@ -1,4 +1,4 @@
-# Aula 3
+# Capítulo 1
 
 ## Modelo Entidade-Relacionamento (LucidChart)
 - Colunas: Elipses
