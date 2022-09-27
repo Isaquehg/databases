@@ -1,0 +1,72 @@
+CODIGO DDL TABELA EMPREGADO:
+
+->TABELA DEPARTAMENTO
+VERSAO 1:
+
+CREATE TABLE Departamento
+(
+    DNome VARCHAR(15),
+    DNumero INT,
+    DataInicio DATE,
+    PRIMARY KEY(DNumero)
+);
+
+ps: quando for fazer o exercicio nao deixe de adicionar o campo 
+SSN_Empregado na tabela Departamento e tambem configura-la como uma
+Chave Estrangeira.
+
+
+
+->TABELA EMPREGADO
+VERSAO 1:
+
+CREATE TABLE Empregado
+(
+  PNome VARCHAR(15) NOT NULL,
+  MInicial CHAR,
+  UNome VARCHAR(15) NOT NULL,
+  SSN BIGINT NOT NULL,
+  DataNasc DATE,
+  Endereco VARCHAR(80),
+  Sexo BIT,
+  Salario DECIMAL(10,2),
+  SSN_Supervisor BIGINT,
+  DNumero_Departamento INT NOT NULL,
+  
+  PRIMARY KEY (SSN),
+  CONSTRAINT fk1
+	FOREIGN KEY (SSN_Supervisor) REFERENCES empregado (SSN),
+  
+  CONSTRAINT fk2
+	FOREIGN KEY (DNumero_Departamento) REFERENCES departamento (DNumero)
+);
+
+
+
+VERSAO 2:
+
+CREATE TABLE Empregado
+(
+  PNome VARCHAR(15) NOT NULL,
+  MInicial CHAR,
+  UNome VARCHAR(15) NOT NULL,
+  SSN BIGINT NOT NULL,
+  DataNasc DATE,
+  Endereco VARCHAR(80),
+  Sexo BIT,
+  Salario DECIMAL(10,2),
+  SSN_Supervisor BIGINT,
+  DNumero_Departamento INT NOT NULL,
+  
+  PRIMARY KEY (SSN),
+  CONSTRAINT fk1
+	FOREIGN KEY (SSN_Supervisor) REFERENCES empregado (SSN) 
+    ON DELETE SET NULL ON UPDATE CASCADE,
+  
+  CONSTRAINT fk2
+	FOREIGN KEY (DNumero_Departamento) REFERENCES departamento (DNumero)
+    ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+
