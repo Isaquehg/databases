@@ -4,7 +4,6 @@ import Model.User;
 public class Main {
 
     public static void main(String[] args) {
-
         UserDAO userDAO= new UserDAO();
 
         User u1 =  new User("Pedro", "123456789");
@@ -13,11 +12,11 @@ public class Main {
         userDAO.insertUser(u1);
         userDAO.insertUser(u2);
 
-        //userDAO.selectUser();
+        userDAO.selectUser();
 
-        //userDAO.deleteUser(2);
+        userDAO.deleteUser(2);
 
-        //userDAO.updateUser(1,u2);
+        userDAO.updateUser(1,u2);
 
     }
 }
