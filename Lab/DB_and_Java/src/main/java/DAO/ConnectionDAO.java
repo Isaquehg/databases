@@ -14,8 +14,6 @@ public abstract class ConnectionDAO {
     String password = "root";
     String url = "jdbc:mysql://localhost:3306/" + database + "?useTimezone=true&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true";
 
-
-
     public void connectToDB() {
         try {
             con = DriverManager.getConnection(url, user, password);
