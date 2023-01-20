@@ -1,2 +1,2 @@
-# databases
-Repo for DataBases Classes.
+# Databases
+Repository from MySQL DataBases Classes.
